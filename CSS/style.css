@@ -1,0 +1,107 @@
+
+/* Hide and pop */
+
+input {
+    display: none;
+} 
+
+.French , .English {
+    display: none;
+}
+
+section > div {
+    display: none;
+}
+
+#radio-section-French:checked ~ .French {
+    display: block;
+}
+
+#radio-section-English:checked ~ .English {
+    display: block;
+}
+
+#radio-section-1:checked ~ #section-1 > div {
+    display: block;
+  }
+
+#radio-section-2:checked ~ #section-2 > div {
+    display: block;
+  }
+
+#radio-section-3:checked ~ #section-3 > div {
+    display: block;
+  }
+
+#radio-section-4:checked ~ #section-4 > div {
+    display: block;
+  }
+  
+
+
+/* Style and position */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color:white;
+    height: 200px;
+    width: 100%;
+}
+h4 {
+    display: inline-block;
+}
+
+h1 , h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.French {
+    height: 20%;
+}
+img {
+    width: 25%;
+    display: inline-block;
+    margin-bottom: 0;
+}
+#section-1 {
+    background-color: rgb(247, 243, 163);
+    position: relative;
+    
+}  
+#section-2 {
+    background-color: rgb(208, 252, 126);
+    position: relative;
+    
+}
+#section-3 {
+    background-color:rgb(148, 214, 242);
+    position: relative;
+    
+}
+#section-4 {
+    background-color:rgb(250, 75, 75);
+    position: relative;
+    
+}
+
+section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+div {
+    display: inline-block;
+}
+
+.info {
+    margin: 5% 25% 0 25% ;
+}
+.language {
+    right: 0 ;
+}
+ 
