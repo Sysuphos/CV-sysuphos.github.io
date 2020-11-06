@@ -1,4 +1,8 @@
-
+body{
+    background-image: url(https://images.unsplash.com/photo-1536486239970-277f67f55a11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+    background-position: center;
+    background-size: cover;
+}
 /* Hide and pop */
 
 input {
@@ -21,23 +25,23 @@ section > div {
     display: block;
 }
 
-#radio-section-0:checked ~ #section-0 > div {
+#radio-section-0:checked ~ #section-contact > div {
     display: block;
 }
 
-#radio-section-1:checked ~ #section-1 > div {
+#radio-section-1:checked ~ #section-xp > div {
     display: block;
   }
 
-#radio-section-2:checked ~ #section-2 > div {
+#radio-section-2:checked ~ #section-formation > div {
     display: block;
   }
 
-#radio-section-3:checked ~ #section-3 > div {
+#radio-section-3:checked ~ #section-skills > div {
     display: block;
   }
 
-#radio-section-4:checked ~ #section-4 > div {
+#radio-section-4:checked ~ #section-hobbies > div {
     display: block;
   }
 
@@ -55,12 +59,27 @@ body {
 h4 {
     display: inline-block;
     padding-left: 50%;
+    display: flex;
 }
 
 h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2rem;
     text-align: center;
     padding-bottom: 20px;
-    color: grey;
+    color: aliceblue;;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+label{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#name{
+    padding-left: 500px;
 }
 
 .French {
@@ -72,34 +91,52 @@ h2 {
     top: 50px;
     max-width: 280px;
     max-height: 380px;
+    border: 5px solid grey;
+    border-radius: 25px;
+    z-index: 20;
 }
 section {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin: 0% 9% 0% 9%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0% 9% 1% 9%;
+    border-radius: 35px;
+    border: 2px solid grey;
+    background-color: rgba(var(--rgb), 0.1);
+    transition: 0.25s;
+    
 }
 
-#section-0 {
+section:hover{
+    transform: translateX(-50px);
+    background-color: rgba(var(--rgb), 1);
+    
+}
+
+#section-contact {
     margin-top: 50px;
+    color: aliceblue;
+    --rgb:159, 194, 226;
 }
 
-#section-1 {
-    background-color: rgb(247, 243, 163);
+#section-xp {
+    --rgb:255, 160, 4;
     position: relative;
     
 }  
-#section-2 {
-    background-color: rgb(208, 252, 126);
+#section-formation {
+    --rgb:255, 160, 4;
+    
     position: relative;
     
 }
-#section-3 {
-    background-color:rgb(220, 115, 51);
+#section-skills {
+    
+    --rgb:255, 160, 4;
     position: relative;
     
 }
-#section-4 {
-    background-color:rgb(148, 214, 242);
+#section-hobbies {
+    --rgb:255, 160, 4;
     position: relative;
     
     
@@ -107,6 +144,7 @@ section {
 
 div {
     display: inline-block;
+
 }
 
 .info {
@@ -114,7 +152,9 @@ div {
 }
 
  ul {
-     padding-left: ;
+     padding-left: 100px;
+     margin-bottom: 20%;
+     color: aliceblue;
  }
 
 .contact {
@@ -122,6 +162,7 @@ div {
     text-align: left;
     display: inline-block;
     line-height: 2em;
+    margin-bottom: 40px;
    
 }
 
@@ -134,23 +175,22 @@ div {
 
 .pro {
     width: 160px ;
-    height: 100% ;
-    max-height: 195px;
-    position: absolute;
-    left: 2px;
-    top: 2px;
+    max-height: 150px ;
+    border-radius: 30%;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right:140px;
+
 }
 
 span {
     font-weight: bold;
 }
 
-h2  {
-    font-family: 'Inconsolata', monospace;
-}
  p, span{
     font-family: 'Maven Pro', sans-serif;
     line-height: 2em;
+    font-size: 1.5rem;
  }
 
  #covid {
@@ -160,6 +200,7 @@ h2  {
 
  a {
      margin-left: 10px;
+     color: aliceblue;
  }
 
  /* Responsive */
@@ -174,9 +215,9 @@ h2  {
      
 @media only screen and (max-width: 550px) {     
      section {
-        padding-top: 0%;
-        padding-bottom: 0%;
-        margin: 0% 0% 0% 0%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
         
      }
      .contact {
