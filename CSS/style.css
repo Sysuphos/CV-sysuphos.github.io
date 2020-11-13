@@ -174,12 +174,13 @@ div {
 }
 
 .pro {
-    width: 160px ;
-    max-height: 150px ;
+    width: 180px ;
+    max-height: 170px ;
     border-radius: 30%;
     margin-top: 20px;
     margin-left: 40px;
     margin-right:140px;
+    
 
 }
 
